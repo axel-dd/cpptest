@@ -1,0 +1,466 @@
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (123) LaunchOptions<LocalLaunchOptions xmlns='http://schemas.microsoft.com/vstudio/MDDDebuggerOptions/2014'\n"},"seq":2}
+1: (123) LaunchOptions<LocalLaunchOptions xmlns='http://schemas.microsoft.com/vstudio/MDDDebuggerOptions/2014'
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (134) LaunchOptions  ExePath='/home/axel/dev/cpptest/bin/cpptest'\n"},"seq":4}
+1: (134) LaunchOptions  ExePath='/home/axel/dev/cpptest/bin/cpptest'
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (134) LaunchOptions  WorkingDirectory='/home/axel/dev/cpptest'\n"},"seq":6}
+1: (134) LaunchOptions  WorkingDirectory='/home/axel/dev/cpptest'
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (134) LaunchOptions  ExeArguments=''\n"},"seq":8}
+1: (134) LaunchOptions  ExeArguments=''
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (134) LaunchOptions  MIMode='gdb'\n"},"seq":10}
+1: (134) LaunchOptions  MIMode='gdb'
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (135) LaunchOptions  MIDebuggerPath='/usr/bin/gdb'\n"},"seq":12}
+1: (135) LaunchOptions  MIDebuggerPath='/usr/bin/gdb'
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (135) LaunchOptions  WaitDynamicLibLoad='false'\n"},"seq":14}
+1: (135) LaunchOptions  WaitDynamicLibLoad='false'
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (135) LaunchOptions>\n"},"seq":16}
+1: (135) LaunchOptions>
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (135) LaunchOptions    <SetupCommands>\n"},"seq":18}
+1: (135) LaunchOptions    <SetupCommands>
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (135) LaunchOptions        <Command IgnoreFailures='true' Description='Enable pretty-printing for gdb'>-enable-pretty-printing</Command>\n"},"seq":20}
+1: (135) LaunchOptions        <Command IgnoreFailures='true' Description='Enable pretty-printing for gdb'>-enable-pretty-printing</Command>
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (135) LaunchOptions    </SetupCommands>\n"},"seq":22}
+1: (135) LaunchOptions    </SetupCommands>
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (135) LaunchOptions</LocalLaunchOptions>\n"},"seq":24}
+1: (135) LaunchOptions</LocalLaunchOptions>
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (217) DbgCmd:echo $$ > /tmp/Microsoft-MIEngine-Pid-k7y56sp9.ib5 ; cd \"/home/axel/dev/cpptest/bin\" ; DbgTerm=`tty` ; set -o monitor ; trap 'rm \"/tmp/Microsoft-MIEngine-In-2tn5jy5y.9dw\" \"/tmp/Microsoft-MIEngine-Out-a92p8xen.982\" \"/tmp/Microsoft-MIEngine-Pid-k7y56sp9.ib5\" \"/tmp/Microsoft-MIEngine-Cmd-mwnd9oxd.2qf\"' EXIT ; \"/usr/bin/gdb\" --interpreter=mi --tty=$DbgTerm < \"/tmp/Microsoft-MIEngine-In-2tn5jy5y.9dw\" > \"/tmp/Microsoft-MIEngine-Out-a92p8xen.982\" & clear; pid=$! ; echo $pid > \"/tmp/Microsoft-MIEngine-Pid-k7y56sp9.ib5\" ; wait $pid; \n"},"seq":26}
+1: (217) DbgCmd:echo $$ > /tmp/Microsoft-MIEngine-Pid-k7y56sp9.ib5 ; cd "/home/axel/dev/cpptest/bin" ; DbgTerm=`tty` ; set -o monitor ; trap 'rm "/tmp/Microsoft-MIEngine-In-2tn5jy5y.9dw" "/tmp/Microsoft-MIEngine-Out-a92p8xen.982" "/tmp/Microsoft-MIEngine-Pid-k7y56sp9.ib5" "/tmp/Microsoft-MIEngine-Cmd-mwnd9oxd.2qf"' EXIT ; "/usr/bin/gdb" --interpreter=mi --tty=$DbgTerm < "/tmp/Microsoft-MIEngine-In-2tn5jy5y.9dw" > "/tmp/Microsoft-MIEngine-Out-a92p8xen.982" & clear; pid=$! ; echo $pid > "/tmp/Microsoft-MIEngine-Pid-k7y56sp9.ib5" ; wait $pid;
+--> C (runInTerminal-28): {"type":"request","command":"runInTerminal","arguments":{"kind":"integrated","title":"cppdbg: cpptest","cwd":"","args":["/bin/sh","/tmp/Microsoft-MIEngine-Cmd-mwnd9oxd.2qf"],"env":{}},"seq":28}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (232) Wait for connection completion.\n"},"seq":30}
+1: (232) Wait for connection completion.
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (339) ->=thread-group-added,id=\"i1\"\n"},"seq":32}
+1: (339) ->=thread-group-added,id="i1"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (341) ->~\"GNU gdb (GDB) 9.1\\n\"\n"},"seq":34}
+1: (341) ->~"GNU gdb (GDB) 9.1\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (341) ->~\"Copyright (C) 2020 Free Software Foundation, Inc.\\n\"\n"},"seq":36}
+1: (341) ->~"Copyright (C) 2020 Free Software Foundation, Inc.\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (341) ->~\"License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\\nThis is free software: you are free to change and redistribute it.\\nThere is NO WARRANTY, to the extent permitted by law.\"\n"},"seq":38}
+1: (341) ->~"License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law."
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (341) ->~\"\\nType \\\"show copying\\\" and \\\"show warranty\\\" for details.\\n\"\n"},"seq":40}
+1: (341) ->~"\nType \"show copying\" and \"show warranty\" for details.\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (341) ->~\"This GDB was configured as \\\"x86_64-pc-linux-gnu\\\".\\n\"\n"},"seq":42}
+1: (341) ->~"This GDB was configured as \"x86_64-pc-linux-gnu\".\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (341) ->~\"Type \\\"show configuration\\\" for configuration details.\\n\"\n"},"seq":44}
+1: (341) ->~"Type \"show configuration\" for configuration details.\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (342) ->~\"For bug reporting instructions, please see:\\n\"\n"},"seq":46}
+1: (342) ->~"For bug reporting instructions, please see:\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (342) ->~\"<http://www.gnu.org/software/gdb/bugs/>.\\n\"\n"},"seq":48}
+1: (342) ->~"<http://www.gnu.org/software/gdb/bugs/>.\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (342) ->~\"Find the GDB manual and other documentation resources online at:\\n    <http://www.gnu.org/software/gdb/documentation/>.\"\n"},"seq":50}
+1: (342) ->~"Find the GDB manual and other documentation resources online at:\n    <http://www.gnu.org/software/gdb/documentation/>."
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (342) ->~\"\\n\\n\"\n"},"seq":52}
+1: (342) ->~"\n\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (342) ->~\"For help, type \\\"help\\\".\\n\"\n"},"seq":54}
+1: (342) ->~"For help, type \"help\".\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (342) ->~\"Type \\\"apropos word\\\" to search for commands related to \\\"word\\\".\\n\"\n"},"seq":56}
+1: (342) ->~"Type \"apropos word\" to search for commands related to \"word\".\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (342) ->(gdb)\n"},"seq":58}
+1: (342) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (345) <-1001-gdb-set target-async on\n"},"seq":60}
+1: (345) <-1001-gdb-set target-async on
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (346) ->1001^done\n"},"seq":62}
+1: (346) ->1001^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (346) ->(gdb)\n"},"seq":64}
+1: (346) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (347) 1001: elapsed time 2\n"},"seq":66}
+1: (347) 1001: elapsed time 2
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (355) <-1002-enable-pretty-printing\n"},"seq":68}
+1: (355) <-1002-enable-pretty-printing
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (356) ->1002^done\n"},"seq":70}
+1: (356) ->1002^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (356) ->(gdb)\n"},"seq":72}
+1: (356) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (356) 1002: elapsed time 0\n"},"seq":74}
+1: (356) 1002: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (356) <-1003-interpreter-exec console \"set pagination off\"\n"},"seq":76}
+1: (356) <-1003-interpreter-exec console "set pagination off"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (356) ->=cmd-param-changed,param=\"pagination\",value=\"off\"\n"},"seq":78}
+1: (356) ->=cmd-param-changed,param="pagination",value="off"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (356) ->1003^done\n"},"seq":80}
+1: (356) ->1003^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (356) ->(gdb)\n"},"seq":82}
+1: (356) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (357) 1003: elapsed time 0\n"},"seq":84}
+1: (357) 1003: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (357) <-1004-gdb-set auto-solib-add on\n"},"seq":86}
+1: (357) <-1004-gdb-set auto-solib-add on
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (357) ->1004^done\n"},"seq":88}
+1: (357) ->1004^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (357) ->(gdb)\n"},"seq":90}
+1: (357) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (357) 1004: elapsed time 0\n"},"seq":92}
+1: (357) 1004: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (359) <-1005-gdb-set solib-search-path /home/axel/dev/cpptest/bin:\n"},"seq":94}
+1: (359) <-1005-gdb-set solib-search-path /home/axel/dev/cpptest/bin:
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (359) ->1005^done\n"},"seq":96}
+1: (359) ->1005^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (359) ->(gdb)\n"},"seq":98}
+1: (359) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (359) 1005: elapsed time 0\n"},"seq":100}
+1: (359) 1005: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (359) <-1006-gdb-set stop-on-solib-events 1\n"},"seq":102}
+1: (359) <-1006-gdb-set stop-on-solib-events 1
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (360) ->1006^done\n"},"seq":104}
+1: (360) ->1006^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (360) ->(gdb)\n"},"seq":106}
+1: (360) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (360) 1006: elapsed time 0\n"},"seq":108}
+1: (360) 1006: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (360) <-1007-environment-cd /home/axel/dev/cpptest\n"},"seq":110}
+1: (360) <-1007-environment-cd /home/axel/dev/cpptest
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (360) ->1007^done\n"},"seq":112}
+1: (360) ->1007^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (360) ->(gdb)\n"},"seq":114}
+1: (360) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (360) 1007: elapsed time 0\n"},"seq":116}
+1: (360) 1007: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (361) <-1008-file-exec-and-symbols /home/axel/dev/cpptest/bin/cpptest\n"},"seq":118}
+1: (361) <-1008-file-exec-and-symbols /home/axel/dev/cpptest/bin/cpptest
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (361) ->1008^done\n"},"seq":120}
+1: (361) ->1008^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (361) ->(gdb)\n"},"seq":122}
+1: (361) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (361) 1008: elapsed time 0\n"},"seq":124}
+1: (361) 1008: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (363) <-1009-interpreter-exec console \"show architecture\"\n"},"seq":126}
+1: (363) <-1009-interpreter-exec console "show architecture"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (363) ->~\"The target architecture is set automatically (currently i386:x86-64)\\n\"\n"},"seq":128}
+1: (363) ->~"The target architecture is set automatically (currently i386:x86-64)\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (364) ->1009^done\n"},"seq":130}
+1: (364) ->1009^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (364) ->(gdb)\n"},"seq":132}
+1: (364) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (364) 1009: elapsed time 0\n"},"seq":134}
+1: (364) 1009: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (365) <-1010-break-insert -f main\n"},"seq":136}
+1: (365) <-1010-break-insert -f main
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (365) ->1010^done,bkpt={number=\"1\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"0x000000000000123f\",at=\"<main+4>\",thread-groups=[\"i1\"],times=\"0\",original-location=\"main\"}\n"},"seq":138}
+1: (365) ->1010^done,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x000000000000123f",at="<main+4>",thread-groups=["i1"],times="0",original-location="main"}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (365) ->(gdb)\n"},"seq":140}
+1: (365) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (368) 1010: elapsed time 3\n"},"seq":142}
+1: (368) 1010: elapsed time 3
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (374) Send Event AD7EngineCreateEvent\n"},"seq":144}
+1: (374) Send Event AD7EngineCreateEvent
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (376) Send Event AD7ProgramCreateEvent\n"},"seq":146}
+1: (376) Send Event AD7ProgramCreateEvent
+--> E (output): {"type":"event","event":"output","body":{"category":"telemetry","output":"VS/Diagnostics/Debugger/Launch","data":{"VS.Diagnostics.Debugger.ImplementationName":"Microsoft.MIDebugEngine","VS.Diagnostics.Debugger.EngineVersion":"16.5.10511.1","VS.Diagnostics.Debugger.HostVersion":"16.5.10511.1","VS.Diagnostics.Debugger.AdapterId":"cppdbg","VS.Diagnostics.Debugger.Launch.Duration":302,"VS.Diagnostics.Debugger.Launch.IsCoreDump":false,"VS.Diagnostics.Debugger.VisualizerFileUsed":false,"VS.Diagnostics.Debugger.SourceFileMappings":0,"VS.Diagnostics.Debugger.MIMode":null}},"seq":148}
+--> R (launch-2): {"type":"response","request_seq":2,"success":true,"command":"launch","body":{},"seq":150}
+--> E (initialized): {"type":"event","event":"initialized","body":{},"seq":152}
+<--   R (runInTerminal-28) [164 ms]: {"type":"response","seq":3,"command":"runInTerminal","request_seq":28,"success":true,"body":{"shellProcessId":103999}}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (414) ShellPid=124966\n"},"seq":155}
+1: (414) ShellPid=124966
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (415) DebuggerPid=124968\n"},"seq":157}
+1: (415) DebuggerPid=124968
+<--   C (setBreakpoints-4): {"command":"setBreakpoints","arguments":{"source":{"name":"a.cpp","path":"/home/axel/dev/cpptest/src/a.cpp"},"lines":[6,11],"breakpoints":[{"line":6},{"line":11}],"sourceModified":false},"type":"request","seq":4}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (436) <-1011-break-insert -f a.cpp:6\n"},"seq":160}
+1: (436) <-1011-break-insert -f a.cpp:6
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (437) ->&\"No symbol table is loaded.  Use the \\\"file\\\" command.\\n\"\n"},"seq":162}
+1: (437) ->&"No symbol table is loaded.  Use the \"file\" command.\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (437) ->1011^done,bkpt={number=\"2\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"<PENDING>\",pending=\"a.cpp:6\",times=\"0\",original-location=\"a.cpp:6\"}\n"},"seq":164}
+1: (437) ->1011^done,bkpt={number="2",type="breakpoint",disp="keep",enabled="y",addr="<PENDING>",pending="a.cpp:6",times="0",original-location="a.cpp:6"}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (437) ->(gdb)\n"},"seq":166}
+1: (437) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (437) 1011: elapsed time 1\n"},"seq":168}
+1: (437) 1011: elapsed time 1
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (443) Send Event AD7BreakpointErrorEvent\n"},"seq":170}
+1: (443) Send Event AD7BreakpointErrorEvent
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (445) <-1012-break-insert -f a.cpp:11\n"},"seq":172}
+1: (445) <-1012-break-insert -f a.cpp:11
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (446) ->&\"No symbol table is loaded.  Use the \\\"file\\\" command.\\n\"\n"},"seq":174}
+1: (446) ->&"No symbol table is loaded.  Use the \"file\" command.\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (446) ->1012^done,bkpt={number=\"3\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"<PENDING>\",pending=\"a.cpp:11\",times=\"0\",original-location=\"a.cpp:11\"}\n"},"seq":176}
+1: (446) ->1012^done,bkpt={number="3",type="breakpoint",disp="keep",enabled="y",addr="<PENDING>",pending="a.cpp:11",times="0",original-location="a.cpp:11"}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (446) ->(gdb)\n"},"seq":178}
+1: (446) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (446) 1012: elapsed time 0\n"},"seq":180}
+1: (446) 1012: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (446) Send Event AD7BreakpointErrorEvent\n"},"seq":182}
+1: (446) Send Event AD7BreakpointErrorEvent
+--> R (setBreakpoints-4): {"type":"response","request_seq":4,"success":true,"command":"setBreakpoints","body":{"breakpoints":[{"id":1,"verified":true,"line":6},{"id":2,"verified":true,"line":11}]},"seq":184}
+--> E (breakpoint): {"type":"event","event":"breakpoint","body":{"reason":"changed","breakpoint":{"id":1,"verified":false,"message":"Module containing this breakpoint has not yet loaded or the breakpoint address could not be obtained.","line":6}},"seq":186}
+--> E (breakpoint): {"type":"event","event":"breakpoint","body":{"reason":"changed","breakpoint":{"id":2,"verified":false,"message":"Module containing this breakpoint has not yet loaded or the breakpoint address could not be obtained.","line":11}},"seq":188}
+<--   C (setBreakpoints-5): {"command":"setBreakpoints","arguments":{"source":{"name":"main.cpp","path":"/home/axel/dev/cpptest/src/main.cpp"},"lines":[7],"breakpoints":[{"line":7}],"sourceModified":false},"type":"request","seq":5}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (458) <-1013-break-insert -f main.cpp:7\n"},"seq":191}
+1: (458) <-1013-break-insert -f main.cpp:7
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (458) ->&\"No symbol table is loaded.  Use the \\\"file\\\" command.\\n\"\n"},"seq":193}
+1: (458) ->&"No symbol table is loaded.  Use the \"file\" command.\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (458) ->1013^done,bkpt={number=\"4\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"<PENDING>\",pending=\"main.cpp:7\",times=\"0\",original-location=\"main.cpp:7\"}\n"},"seq":195}
+1: (458) ->1013^done,bkpt={number="4",type="breakpoint",disp="keep",enabled="y",addr="<PENDING>",pending="main.cpp:7",times="0",original-location="main.cpp:7"}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (458) ->(gdb)\n"},"seq":197}
+1: (458) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (458) 1013: elapsed time 0\n"},"seq":199}
+1: (458) 1013: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (459) Send Event AD7BreakpointErrorEvent\n"},"seq":201}
+1: (459) Send Event AD7BreakpointErrorEvent
+--> R (setBreakpoints-5): {"type":"response","request_seq":5,"success":true,"command":"setBreakpoints","body":{"breakpoints":[{"id":3,"verified":true,"line":7}]},"seq":203}
+--> E (breakpoint): {"type":"event","event":"breakpoint","body":{"reason":"changed","breakpoint":{"id":3,"verified":false,"message":"Module containing this breakpoint has not yet loaded or the breakpoint address could not be obtained.","line":7}},"seq":205}
+<--   C (setFunctionBreakpoints-6): {"command":"setFunctionBreakpoints","arguments":{"breakpoints":[]},"type":"request","seq":6}
+--> R (setFunctionBreakpoints-6): {"type":"response","request_seq":6,"success":true,"command":"setFunctionBreakpoints","body":{"breakpoints":[]},"seq":208}
+<--   C (configurationDone-7): {"command":"configurationDone","type":"request","seq":7}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (487) Send Event AD7LoadCompleteEvent\n"},"seq":212}
+1: (487) Send Event AD7LoadCompleteEvent
+--> R (configurationDone-7): {"type":"response","request_seq":7,"success":true,"command":"configurationDone","body":{},"seq":211}
+--> E (output): {"type":"event","event":"output","body":{"category":"stdout","output":"=thread-group-added,id=\"i1\"\nGNU gdb (GDB) 9.1\nCopyright (C) 2020 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.\nType \"show copying\" and \"show warranty\" for details.\nThis GDB was configured as \"x86_64-pc-linux-gnu\".\nType \"show configuration\" for configuration details.\nFor bug reporting instructions, please see:\n<http://www.gnu.org/software/gdb/bugs/>.\nFind the GDB manual and other documentation resources online at:\n    <http://www.gnu.org/software/gdb/documentation/>.\n\nFor help, type \"help\".\nType \"apropos word\" to search for commands related to \"word\".\nWarning: Debuggee TargetArchitecture not detected, assuming x86_64.\n=cmd-param-changed,param=\"pagination\",value=\"off\"\n"},"seq":215}
+=thread-group-added,id="i1"
+GNU gdb (GDB) 9.1
+Copyright (C) 2020 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-pc-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+Warning: Debuggee TargetArchitecture not detected, assuming x86_64.
+=cmd-param-changed,param="pagination",value="off"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (491) <-1014-exec-run\n"},"seq":217}
+1: (491) <-1014-exec-run
+<--   C (threads-8): {"command":"threads","type":"request","seq":8}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (491) ->=thread-group-started,id=\"i1\",pid=\"124985\"\n"},"seq":220}
+1: (491) ->=thread-group-started,id="i1",pid="124985"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (492) ->=thread-created,id=\"1\",group-id=\"i1\"\n"},"seq":222}
+1: (492) ->=thread-created,id="1",group-id="i1"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (495) <-1015-thread-info 1\n"},"seq":225}
+1: (495) <-1015-thread-info 1
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (495) ->=breakpoint-modified,bkpt={number=\"1\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"0x000055555555523f\",at=\"<main+4>\",thread-groups=[\"i1\"],times=\"0\",original-location=\"main\"}\n"},"seq":227}
+1: (495) ->=breakpoint-modified,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555523f",at="<main+4>",thread-groups=["i1"],times="0",original-location="main"}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (496) ->=library-loaded,id=\"/lib64/ld-linux-x86-64.so.2\",target-name=\"/lib64/ld-linux-x86-64.so.2\",host-name=\"/lib64/ld-linux-x86-64.so.2\",symbols-loaded=\"0\",thread-group=\"i1\",ranges=[{from=\"0x00007ffff7fd3100\",to=\"0x00007ffff7ff2b14\"}]\n"},"seq":229}
+1: (496) ->=library-loaded,id="/lib64/ld-linux-x86-64.so.2",target-name="/lib64/ld-linux-x86-64.so.2",host-name="/lib64/ld-linux-x86-64.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7fd3100",to="0x00007ffff7ff2b14"}]
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (497) ->1014^running\n"},"seq":231}
+1: (497) ->1014^running
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (497) ->*running,thread-id=\"all\"\n"},"seq":233}
+1: (497) ->*running,thread-id="all"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (497) ->(gdb)\n"},"seq":235}
+1: (497) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (499) ->1015^done,threads=[{id=\"1\",target-id=\"process 124985\",name=\"cpptest\",state=\"running\",core=\"1\"}]\n"},"seq":237}
+1: (499) ->1015^done,threads=[{id="1",target-id="process 124985",name="cpptest",state="running",core="1"}]
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (499) ->(gdb)\n"},"seq":239}
+1: (499) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (499) ->~\"Stopped due to shared library event (no libraries added or removed)\\n\"\n"},"seq":241}
+1: (499) ->~"Stopped due to shared library event (no libraries added or removed)\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (499) ->*stopped,reason=\"solib-event\",thread-id=\"1\",stopped-threads=\"all\",core=\"1\"\n"},"seq":243}
+1: (499) ->*stopped,reason="solib-event",thread-id="1",stopped-threads="all",core="1"
+--> R (threads-8): {"type":"response","request_seq":8,"success":true,"command":"threads","body":{"threads":[]},"seq":224}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (501) 1014: elapsed time 10\n"},"seq":246}
+1: (501) 1014: elapsed time 10
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (503) 1015: elapsed time 7\n"},"seq":248}
+1: (503) 1015: elapsed time 7
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (505) Send Event AD7ProcessInfoUpdatedEvent\n"},"seq":250}
+1: (505) Send Event AD7ProcessInfoUpdatedEvent
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (506) Send Event AD7ThreadCreateEvent\n"},"seq":252}
+1: (506) Send Event AD7ThreadCreateEvent
+--> E (thread): {"type":"event","event":"thread","body":{"reason":"started","threadId":124985},"seq":254}
+--> E (output): {"type":"event","event":"output","body":{"category":"stdout","output":"Stopped due to shared library event (no libraries added or removed)\n"},"seq":256}
+Stopped due to shared library event (no libraries added or removed)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (514) <-1016-interpreter-exec console \"shell echo -e \\\\\\\\033c 1>&2\"\n"},"seq":258}
+1: (514) <-1016-interpreter-exec console "shell echo -e \\\\033c 1>&2"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (516) ->1016^done\n"},"seq":260}
+1: (516) ->1016^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (516) ->(gdb)\n"},"seq":262}
+1: (516) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (516) 1016: elapsed time 2\n"},"seq":264}
+1: (516) 1016: elapsed time 2
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (516) <-1017-gdb-set stop-on-solib-events 0\n"},"seq":266}
+1: (516) <-1017-gdb-set stop-on-solib-events 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (517) ->1017^done\n"},"seq":268}
+1: (517) ->1017^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (517) ->(gdb)\n"},"seq":270}
+1: (517) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (517) 1017: elapsed time 0\n"},"seq":272}
+1: (517) 1017: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (522) <-1018-break-info 2\n"},"seq":274}
+1: (522) <-1018-break-info 2
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (523) ->1018^done,BreakpointTable={nr_rows=\"1\",nr_cols=\"6\",hdr=[{width=\"7\",alignment=\"-1\",col_name=\"number\",colhdr=\"Num\"},{width=\"14\",alignment=\"-1\",col_name=\"type\",colhdr=\"Type\"},{width=\"4\",alignment=\"-1\",col_name=\"disp\",colhdr=\"Disp\"},{width=\"3\",alignment=\"-1\",col_name=\"enabled\",colhdr=\"Enb\"},{width=\"10\",alignment=\"-1\",col_name=\"addr\",colhdr=\"Address\"},{width=\"40\",alignment=\"2\",col_name=\"what\",colhdr=\"What\"}],body=[bkpt={number=\"2\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"<PENDING>\",pending=\"a.cpp:6\",times=\"0\",original-location=\"a.cpp:6\"}]}\n"},"seq":276}
+1: (523) ->1018^done,BreakpointTable={nr_rows="1",nr_cols="6",hdr=[{width="7",alignment="-1",col_name="number",colhdr="Num"},{width="14",alignment="-1",col_name="type",colhdr="Type"},{width="4",alignment="-1",col_name="disp",colhdr="Disp"},{width="3",alignment="-1",col_name="enabled",colhdr="Enb"},{width="10",alignment="-1",col_name="addr",colhdr="Address"},{width="40",alignment="2",col_name="what",colhdr="What"}],body=[bkpt={number="2",type="breakpoint",disp="keep",enabled="y",addr="<PENDING>",pending="a.cpp:6",times="0",original-location="a.cpp:6"}]}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (523) ->(gdb)\n"},"seq":278}
+1: (523) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (524) 1018: elapsed time 1\n"},"seq":280}
+1: (524) 1018: elapsed time 1
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (527) <-1019-break-info 3\n"},"seq":282}
+1: (527) <-1019-break-info 3
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (527) ->1019^done,BreakpointTable={nr_rows=\"1\",nr_cols=\"6\",hdr=[{width=\"7\",alignment=\"-1\",col_name=\"number\",colhdr=\"Num\"},{width=\"14\",alignment=\"-1\",col_name=\"type\",colhdr=\"Type\"},{width=\"4\",alignment=\"-1\",col_name=\"disp\",colhdr=\"Disp\"},{width=\"3\",alignment=\"-1\",col_name=\"enabled\",colhdr=\"Enb\"},{width=\"10\",alignment=\"-1\",col_name=\"addr\",colhdr=\"Address\"},{width=\"40\",alignment=\"2\",col_name=\"what\",colhdr=\"What\"}],body=[bkpt={number=\"3\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"<PENDING>\",pending=\"a.cpp:11\",times=\"0\",original-location=\"a.cpp:11\"}]}\n"},"seq":284}
+1: (527) ->1019^done,BreakpointTable={nr_rows="1",nr_cols="6",hdr=[{width="7",alignment="-1",col_name="number",colhdr="Num"},{width="14",alignment="-1",col_name="type",colhdr="Type"},{width="4",alignment="-1",col_name="disp",colhdr="Disp"},{width="3",alignment="-1",col_name="enabled",colhdr="Enb"},{width="10",alignment="-1",col_name="addr",colhdr="Address"},{width="40",alignment="2",col_name="what",colhdr="What"}],body=[bkpt={number="3",type="breakpoint",disp="keep",enabled="y",addr="<PENDING>",pending="a.cpp:11",times="0",original-location="a.cpp:11"}]}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (527) ->(gdb)\n"},"seq":286}
+1: (527) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (527) 1019: elapsed time 0\n"},"seq":288}
+1: (527) 1019: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (528) <-1020-break-info 4\n"},"seq":290}
+1: (528) <-1020-break-info 4
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (528) ->1020^done,BreakpointTable={nr_rows=\"1\",nr_cols=\"6\",hdr=[{width=\"7\",alignment=\"-1\",col_name=\"number\",colhdr=\"Num\"},{width=\"14\",alignment=\"-1\",col_name=\"type\",colhdr=\"Type\"},{width=\"4\",alignment=\"-1\",col_name=\"disp\",colhdr=\"Disp\"},{width=\"3\",alignment=\"-1\",col_name=\"enabled\",colhdr=\"Enb\"},{width=\"10\",alignment=\"-1\",col_name=\"addr\",colhdr=\"Address\"},{width=\"40\",alignment=\"2\",col_name=\"what\",colhdr=\"What\"}],body=[bkpt={number=\"4\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"<PENDING>\",pending=\"main.cpp:7\",times=\"0\",original-location=\"main.cpp:7\"}]}\n"},"seq":292}
+1: (528) ->1020^done,BreakpointTable={nr_rows="1",nr_cols="6",hdr=[{width="7",alignment="-1",col_name="number",colhdr="Num"},{width="14",alignment="-1",col_name="type",colhdr="Type"},{width="4",alignment="-1",col_name="disp",colhdr="Disp"},{width="3",alignment="-1",col_name="enabled",colhdr="Enb"},{width="10",alignment="-1",col_name="addr",colhdr="Address"},{width="40",alignment="2",col_name="what",colhdr="What"}],body=[bkpt={number="4",type="breakpoint",disp="keep",enabled="y",addr="<PENDING>",pending="main.cpp:7",times="0",original-location="main.cpp:7"}]}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (528) ->(gdb)\n"},"seq":294}
+1: (528) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (528) 1020: elapsed time 0\n"},"seq":296}
+1: (528) 1020: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (529) <-1021-interpreter-exec console \"info sharedlibrary\"\n"},"seq":298}
+1: (529) <-1021-interpreter-exec console "info sharedlibrary"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (530) ->~\"From                To                  Syms Read   Shared Object Library\\n\"\n"},"seq":300}
+1: (530) ->~"From                To                  Syms Read   Shared Object Library\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (530) ->~\"0x00007ffff7fd3100  0x00007ffff7ff2b14  Yes         /lib64/ld-linux-x86-64.so.2\\n\"\n"},"seq":302}
+1: (530) ->~"0x00007ffff7fd3100  0x00007ffff7ff2b14  Yes         /lib64/ld-linux-x86-64.so.2\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (530) ->1021^done\n"},"seq":304}
+1: (530) ->1021^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (530) ->(gdb)\n"},"seq":306}
+1: (530) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (530) 1021: elapsed time 0\n"},"seq":308}
+1: (530) 1021: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (532) Send Event AD7ModuleLoadEvent\n"},"seq":310}
+1: (532) Send Event AD7ModuleLoadEvent
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"Loaded '/lib64/ld-linux-x86-64.so.2'. Symbols loaded.\n"},"seq":312}
+Loaded '/lib64/ld-linux-x86-64.so.2'. Symbols loaded.
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (533) <--exec-continue\n"},"seq":314}
+1: (533) <--exec-continue
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (534) ->^running\n"},"seq":316}
+1: (534) ->^running
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (534) ->*running,thread-id=\"all\"\n"},"seq":318}
+1: (534) ->*running,thread-id="all"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (534) ->(gdb)\n"},"seq":320}
+1: (534) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (535) ->=library-loaded,id=\"/usr/lib/libstdc++.so.6\",target-name=\"/usr/lib/libstdc++.so.6\",host-name=\"/usr/lib/libstdc++.so.6\",symbols-loaded=\"0\",thread-group=\"i1\",ranges=[{from=\"0x00007ffff7e30040\",to=\"0x00007ffff7f28212\"}]\n"},"seq":322}
+1: (535) ->=library-loaded,id="/usr/lib/libstdc++.so.6",target-name="/usr/lib/libstdc++.so.6",host-name="/usr/lib/libstdc++.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7e30040",to="0x00007ffff7f28212"}]
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (535) ->=library-loaded,id=\"/usr/lib/libm.so.6\",target-name=\"/usr/lib/libm.so.6\",host-name=\"/usr/lib/libm.so.6\",symbols-loaded=\"0\",thread-group=\"i1\",ranges=[{from=\"0x00007ffff7c63370\",to=\"0x00007ffff7cfed38\"}]\n"},"seq":324}
+1: (535) ->=library-loaded,id="/usr/lib/libm.so.6",target-name="/usr/lib/libm.so.6",host-name="/usr/lib/libm.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7c63370",to="0x00007ffff7cfed38"}]
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (535) ->=library-loaded,id=\"/usr/lib/libgcc_s.so.1\",target-name=\"/usr/lib/libgcc_s.so.1\",host-name=\"/usr/lib/libgcc_s.so.1\",symbols-loaded=\"0\",thread-group=\"i1\",ranges=[{from=\"0x00007ffff7c3d020\",to=\"0x00007ffff7c4d575\"}]\n"},"seq":326}
+1: (535) ->=library-loaded,id="/usr/lib/libgcc_s.so.1",target-name="/usr/lib/libgcc_s.so.1",host-name="/usr/lib/libgcc_s.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7c3d020",to="0x00007ffff7c4d575"}]
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (536) ->=library-loaded,id=\"/usr/lib/libc.so.6\",target-name=\"/usr/lib/libc.so.6\",host-name=\"/usr/lib/libc.so.6\",symbols-loaded=\"0\",thread-group=\"i1\",ranges=[{from=\"0x00007ffff7a99630\",to=\"0x00007ffff7be3e2f\"}]\n"},"seq":328}
+1: (536) ->=library-loaded,id="/usr/lib/libc.so.6",target-name="/usr/lib/libc.so.6",host-name="/usr/lib/libc.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7a99630",to="0x00007ffff7be3e2f"}]
+<--   C (threads-9): {"command":"threads","type":"request","seq":9}
+--> R (threads-9): {"type":"response","request_seq":9,"success":true,"command":"threads","body":{"threads":[{"id":124985,"name":"cpptest"}]},"seq":331}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (684) ->=breakpoint-modified,bkpt={number=\"1\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"0x000055555555523f\",at=\"<main+4>\",thread-groups=[\"i1\"],times=\"1\",original-location=\"main\"}\n"},"seq":333}
+1: (684) ->=breakpoint-modified,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555523f",at="<main+4>",thread-groups=["i1"],times="1",original-location="main"}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (685) ->~\"\\n\"\n"},"seq":335}
+1: (685) ->~"\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (685) ->~\"Breakpoint 1, 0x000055555555523f in main ()\\n\"\n"},"seq":337}
+1: (685) ->~"Breakpoint 1, 0x000055555555523f in main ()\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"stdout","output":"\n"},"seq":338}
+
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (685) ->*stopped,reason=\"breakpoint-hit\",disp=\"keep\",bkptno=\"1\",frame={addr=\"0x000055555555523f\",func=\"main\",args=[],arch=\"i386:x86-64\"},thread-id=\"1\",stopped-threads=\"all\",core=\"1\"\n"},"seq":341}
+1: (685) ->*stopped,reason="breakpoint-hit",disp="keep",bkptno="1",frame={addr="0x000055555555523f",func="main",args=[],arch="i386:x86-64"},thread-id="1",stopped-threads="all",core="1"
+--> E (output): {"type":"event","event":"output","body":{"category":"stdout","output":"Breakpoint 1, 0x000055555555523f in main ()\n"},"seq":343}
+Breakpoint 1, 0x000055555555523f in main ()
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (693) <-1022-thread-info\n"},"seq":345}
+1: (693) <-1022-thread-info
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (693) ->1022^done,threads=[{id=\"1\",target-id=\"process 124985\",name=\"cpptest\",frame={level=\"0\",addr=\"0x000055555555523f\",func=\"main\",args=[],arch=\"i386:x86-64\"},state=\"stopped\",core=\"1\"}],current-thread-id=\"1\"\n"},"seq":347}
+1: (693) ->1022^done,threads=[{id="1",target-id="process 124985",name="cpptest",frame={level="0",addr="0x000055555555523f",func="main",args=[],arch="i386:x86-64"},state="stopped",core="1"}],current-thread-id="1"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (694) ->(gdb)\n"},"seq":349}
+1: (694) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (694) 1022: elapsed time 1\n"},"seq":351}
+1: (694) 1022: elapsed time 1
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (698) <-1023-break-info 2\n"},"seq":353}
+1: (698) <-1023-break-info 2
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (699) ->1023^done,BreakpointTable={nr_rows=\"1\",nr_cols=\"6\",hdr=[{width=\"7\",alignment=\"-1\",col_name=\"number\",colhdr=\"Num\"},{width=\"14\",alignment=\"-1\",col_name=\"type\",colhdr=\"Type\"},{width=\"4\",alignment=\"-1\",col_name=\"disp\",colhdr=\"Disp\"},{width=\"3\",alignment=\"-1\",col_name=\"enabled\",colhdr=\"Enb\"},{width=\"10\",alignment=\"-1\",col_name=\"addr\",colhdr=\"Address\"},{width=\"40\",alignment=\"2\",col_name=\"what\",colhdr=\"What\"}],body=[bkpt={number=\"2\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"<PENDING>\",pending=\"a.cpp:6\",times=\"0\",original-location=\"a.cpp:6\"}]}\n"},"seq":355}
+1: (699) ->1023^done,BreakpointTable={nr_rows="1",nr_cols="6",hdr=[{width="7",alignment="-1",col_name="number",colhdr="Num"},{width="14",alignment="-1",col_name="type",colhdr="Type"},{width="4",alignment="-1",col_name="disp",colhdr="Disp"},{width="3",alignment="-1",col_name="enabled",colhdr="Enb"},{width="10",alignment="-1",col_name="addr",colhdr="Address"},{width="40",alignment="2",col_name="what",colhdr="What"}],body=[bkpt={number="2",type="breakpoint",disp="keep",enabled="y",addr="<PENDING>",pending="a.cpp:6",times="0",original-location="a.cpp:6"}]}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (699) ->(gdb)\n"},"seq":357}
+1: (699) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (699) 1023: elapsed time 0\n"},"seq":359}
+1: (699) 1023: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (699) <-1024-break-info 3\n"},"seq":361}
+1: (699) <-1024-break-info 3
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (700) ->1024^done,BreakpointTable={nr_rows=\"1\",nr_cols=\"6\",hdr=[{width=\"7\",alignment=\"-1\",col_name=\"number\",colhdr=\"Num\"},{width=\"14\",alignment=\"-1\",col_name=\"type\",colhdr=\"Type\"},{width=\"4\",alignment=\"-1\",col_name=\"disp\",colhdr=\"Disp\"},{width=\"3\",alignment=\"-1\",col_name=\"enabled\",colhdr=\"Enb\"},{width=\"10\",alignment=\"-1\",col_name=\"addr\",colhdr=\"Address\"},{width=\"40\",alignment=\"2\",col_name=\"what\",colhdr=\"What\"}],body=[bkpt={number=\"3\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"<PENDING>\",pending=\"a.cpp:11\",times=\"0\",original-location=\"a.cpp:11\"}]}\n"},"seq":363}
+1: (700) ->1024^done,BreakpointTable={nr_rows="1",nr_cols="6",hdr=[{width="7",alignment="-1",col_name="number",colhdr="Num"},{width="14",alignment="-1",col_name="type",colhdr="Type"},{width="4",alignment="-1",col_name="disp",colhdr="Disp"},{width="3",alignment="-1",col_name="enabled",colhdr="Enb"},{width="10",alignment="-1",col_name="addr",colhdr="Address"},{width="40",alignment="2",col_name="what",colhdr="What"}],body=[bkpt={number="3",type="breakpoint",disp="keep",enabled="y",addr="<PENDING>",pending="a.cpp:11",times="0",original-location="a.cpp:11"}]}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (700) ->(gdb)\n"},"seq":365}
+1: (700) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (700) 1024: elapsed time 0\n"},"seq":367}
+1: (700) 1024: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (700) <-1025-break-info 4\n"},"seq":369}
+1: (700) <-1025-break-info 4
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (700) ->1025^done,BreakpointTable={nr_rows=\"1\",nr_cols=\"6\",hdr=[{width=\"7\",alignment=\"-1\",col_name=\"number\",colhdr=\"Num\"},{width=\"14\",alignment=\"-1\",col_name=\"type\",colhdr=\"Type\"},{width=\"4\",alignment=\"-1\",col_name=\"disp\",colhdr=\"Disp\"},{width=\"3\",alignment=\"-1\",col_name=\"enabled\",colhdr=\"Enb\"},{width=\"10\",alignment=\"-1\",col_name=\"addr\",colhdr=\"Address\"},{width=\"40\",alignment=\"2\",col_name=\"what\",colhdr=\"What\"}],body=[bkpt={number=\"4\",type=\"breakpoint\",disp=\"keep\",enabled=\"y\",addr=\"<PENDING>\",pending=\"main.cpp:7\",times=\"0\",original-location=\"main.cpp:7\"}]}\n"},"seq":371}
+1: (700) ->1025^done,BreakpointTable={nr_rows="1",nr_cols="6",hdr=[{width="7",alignment="-1",col_name="number",colhdr="Num"},{width="14",alignment="-1",col_name="type",colhdr="Type"},{width="4",alignment="-1",col_name="disp",colhdr="Disp"},{width="3",alignment="-1",col_name="enabled",colhdr="Enb"},{width="10",alignment="-1",col_name="addr",colhdr="Address"},{width="40",alignment="2",col_name="what",colhdr="What"}],body=[bkpt={number="4",type="breakpoint",disp="keep",enabled="y",addr="<PENDING>",pending="main.cpp:7",times="0",original-location="main.cpp:7"}]}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (700) ->(gdb)\n"},"seq":373}
+1: (700) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (700) 1025: elapsed time 0\n"},"seq":375}
+1: (700) 1025: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (701) <-1026-interpreter-exec console \"info sharedlibrary\"\n"},"seq":377}
+1: (701) <-1026-interpreter-exec console "info sharedlibrary"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (701) ->~\"From                To                  Syms Read   Shared Object Library\\n\"\n"},"seq":379}
+1: (701) ->~"From                To                  Syms Read   Shared Object Library\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (701) ->~\"0x00007ffff7fd3100  0x00007ffff7ff2b14  Yes         /lib64/ld-linux-x86-64.so.2\\n\"\n"},"seq":381}
+1: (701) ->~"0x00007ffff7fd3100  0x00007ffff7ff2b14  Yes         /lib64/ld-linux-x86-64.so.2\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (701) ->~\"0x00007ffff7e30040  0x00007ffff7f28212  Yes         /usr/lib/libstdc++.so.6\\n\"\n"},"seq":383}
+1: (701) ->~"0x00007ffff7e30040  0x00007ffff7f28212  Yes         /usr/lib/libstdc++.so.6\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (701) ->~\"0x00007ffff7c63370  0x00007ffff7cfed38  Yes         /usr/lib/libm.so.6\\n\"\n"},"seq":385}
+1: (701) ->~"0x00007ffff7c63370  0x00007ffff7cfed38  Yes         /usr/lib/libm.so.6\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (701) ->~\"0x00007ffff7c3d020  0x00007ffff7c4d575  Yes         /usr/lib/libgcc_s.so.1\\n\"\n"},"seq":387}
+1: (701) ->~"0x00007ffff7c3d020  0x00007ffff7c4d575  Yes         /usr/lib/libgcc_s.so.1\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (702) ->~\"0x00007ffff7a99630  0x00007ffff7be3e2f  Yes         /usr/lib/libc.so.6\\n\"\n"},"seq":389}
+1: (702) ->~"0x00007ffff7a99630  0x00007ffff7be3e2f  Yes         /usr/lib/libc.so.6\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (702) ->1026^done\n"},"seq":391}
+1: (702) ->1026^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (702) ->(gdb)\n"},"seq":393}
+1: (702) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (702) 1026: elapsed time 1\n"},"seq":395}
+1: (702) 1026: elapsed time 1
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (702) Send Event AD7ModuleLoadEvent\n"},"seq":397}
+1: (702) Send Event AD7ModuleLoadEvent
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"Loaded '/usr/lib/libstdc++.so.6'. Symbols loaded.\n"},"seq":399}
+Loaded '/usr/lib/libstdc++.so.6'. Symbols loaded.
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (703) Send Event AD7ModuleLoadEvent\n"},"seq":401}
+1: (703) Send Event AD7ModuleLoadEvent
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"Loaded '/usr/lib/libm.so.6'. Symbols loaded.\n"},"seq":403}
+Loaded '/usr/lib/libm.so.6'. Symbols loaded.
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (703) Send Event AD7ModuleLoadEvent\n"},"seq":405}
+1: (703) Send Event AD7ModuleLoadEvent
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"Loaded '/usr/lib/libgcc_s.so.1'. Symbols loaded.\n"},"seq":407}
+Loaded '/usr/lib/libgcc_s.so.1'. Symbols loaded.
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (703) Send Event AD7ModuleLoadEvent\n"},"seq":409}
+1: (703) Send Event AD7ModuleLoadEvent
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"Loaded '/usr/lib/libc.so.6'. Symbols loaded.\n"},"seq":411}
+Loaded '/usr/lib/libc.so.6'. Symbols loaded.
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (707) <-1027-stack-list-frames 0 1000\n"},"seq":413}
+1: (707) <-1027-stack-list-frames 0 1000
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (707) ->1027^done,stack=[frame={level=\"0\",addr=\"0x000055555555523f\",func=\"main\",arch=\"i386:x86-64\"}]\n"},"seq":415}
+1: (707) ->1027^done,stack=[frame={level="0",addr="0x000055555555523f",func="main",arch="i386:x86-64"}]
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (708) ->(gdb)\n"},"seq":417}
+1: (708) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (708) 1027: elapsed time 1\n"},"seq":419}
+1: (708) 1027: elapsed time 1
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (713) <-1028-break-delete 1\n"},"seq":421}
+1: (713) <-1028-break-delete 1
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (714) ->1028^done\n"},"seq":423}
+1: (714) ->1028^done
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (714) ->(gdb)\n"},"seq":425}
+1: (714) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (714) 1028: elapsed time 0\n"},"seq":427}
+1: (714) 1028: elapsed time 0
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (714) Send Event AD7EntryPointEvent\n"},"seq":429}
+1: (714) Send Event AD7EntryPointEvent
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (715) <--exec-continue\n"},"seq":431}
+1: (715) <--exec-continue
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (716) ->^running\n"},"seq":433}
+1: (716) ->^running
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (716) ->*running,thread-id=\"all\"\n"},"seq":435}
+1: (716) ->*running,thread-id="all"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (716) ->(gdb)\n"},"seq":437}
+1: (716) ->(gdb)
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (716) ->~\"[Inferior 1 (process 124985) exited normally]\\n\"\n"},"seq":439}
+1: (716) ->~"[Inferior 1 (process 124985) exited normally]\n"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (717) ->=thread-exited,id=\"1\",group-id=\"i1\"\n"},"seq":441}
+1: (717) ->=thread-exited,id="1",group-id="i1"
+--> E (output): {"type":"event","event":"output","body":{"category":"stdout","output":"[Inferior 1 (process 124985) exited normally]\n"},"seq":442}
+[Inferior 1 (process 124985) exited normally]
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (717) ->=thread-group-exited,id=\"i1\",exit-code=\"0\"\n"},"seq":445}
+1: (717) ->=thread-group-exited,id="i1",exit-code="0"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (717) ->*stopped,reason=\"exited-normally\"\n"},"seq":447}
+1: (717) ->*stopped,reason="exited-normally"
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (718) Send Event AD7ThreadDestroyEvent\n"},"seq":449}
+1: (718) Send Event AD7ThreadDestroyEvent
+--> E (thread): {"type":"event","event":"thread","body":{"reason":"exited","threadId":124985},"seq":451}
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (719) <--gdb-exit\n"},"seq":453}
+1: (719) <--gdb-exit
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (720) ->^exit\n"},"seq":455}
+1: (720) ->^exit
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"1: (726) Send Event AD7ProgramDestroyEvent\n"},"seq":457}
+1: (726) Send Event AD7ProgramDestroyEvent
+--> E (output): {"type":"event","event":"output","body":{"category":"console","output":"The program '/home/axel/dev/cpptest/bin/cpptest' has exited with code 0 (0x00000000).\r\n\n"},"seq":459}
+The program '/home/axel/dev/cpptest/bin/cpptest' has exited with code 0 (0x00000000).
+--> E (exited): {"type":"event","event":"exited","body":{"exitCode":0},"seq":461}
+--> E (terminated): {"type":"event","event":"terminated","body":{},"seq":463}
+--> E (output): {"type":"event","event":"output","body":{"category":"telemetry","output":"VS/Diagnostics/Debugger/DebugCompleted","data":{"VS.Diagnostics.Debugger.ImplementationName":"Microsoft.MIDebugEngine","VS.Diagnostics.Debugger.EngineVersion":"16.5.10511.1","VS.Diagnostics.Debugger.HostVersion":"16.5.10511.1","VS.Diagnostics.Debugger.AdapterId":"cppdbg","VS.Diagnostics.Debugger.DebugCompleted.BreakCounter":0}},"seq":465}
+<--   C (disconnect-10): {"command":"disconnect","arguments":{"restart":false},"type":"request","seq":10}
+--> R (disconnect-10): {"type":"response","request_seq":10,"success":true,"command":"disconnect","body":{},"seq":468}
