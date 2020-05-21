@@ -1,14 +1,34 @@
-cmake_minimum_required(VERSION 3.0.0)
+cmake_minimum_required(VERSION 3.10.0 FATAL_ERROR)
+
 project(cpptest VERSION 0.1.0)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-include(CTest)
-enable_testing()
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
-add_executable(cpptest src/main.cpp src/a.cpp)
+find_package(Qt5 REQUIRED COMPONENTS Core Widgets Gui)
 
-set(CPACK_PROJECT_NAME ${PROJECT_NAME})
-set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
-include(CPack)
+set(PROJECT_UI 
+    src/mainwindow.ui)
+
+set(PROJECT_HEADERS
+    src/a.h
+    src/mainwindow.h)
+
+set(PROJECT_SOURCES 
+    src/main.cpp
+    src/a.cpp
+    src/mainwindow.cpp)
+
+qt5_wrap_ui(PROJECT_HEADERS_WRAPPED ${PROJECT_UI})
+qt5_wrap_cpp(PROJECT_SOURCES_MOC ${PROJECT_HEADERS})
+
+add_executable(${PROJECT_NAME} ${PROJECT_HEADERS} ${PROJECT_SOURCES} 
+    ${PROJECT_SOURCES_MOC} ${PROJECT_HEADERS_WRAPPED})
+
+target_link_libraries(${PROJECT_NAME} 
+    PUBLIC 
+    Qt5::Core
+    Qt5::Gui
+    Qt5::Widgets)
