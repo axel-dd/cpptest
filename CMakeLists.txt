@@ -7,7 +7,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 include(CTest)
 enable_testing()
 
-add_executable(cpptest src/main.cpp src/a.cpp)
+file(GLOB_RECURSE SOURCE_FILES "src/*.cpp")
+
+add_executable(cpptest ${SOURCE_FILES})
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
