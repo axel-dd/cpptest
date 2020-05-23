@@ -1,1 +1,1 @@
-# c++ vscode test project
+# c++ vscode test project with qt
