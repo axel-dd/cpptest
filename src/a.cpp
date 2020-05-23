@@ -1,4 +1,4 @@
-#include "a.hpp"
+#include "a.h"
 #include <iostream>
 
 A::A()
